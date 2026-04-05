@@ -1,0 +1,130 @@
+ian@ian-PORTEGE-Z930:~$ gedit setup_run_prolog_demo.sh
+ian@ian-PORTEGE-Z930:~$ chmod u+x setup_run_prolog_demo.sh
+ian@ian-PORTEGE-Z930:~$ ./setup_run_prolog_demo.sh
+==> Preparing system dependencies
+[sudo] password for ian: 
+Hit:1 http://au.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://au.archive.ubuntu.com/ubuntu jammy-updates InRelease              
+Hit:3 http://au.archive.ubuntu.com/ubuntu jammy-backports InRelease            
+Hit:4 http://dl.google.com/linux/earth/deb stable InRelease                    
+Hit:5 https://dl.google.com/linux/chrome/deb stable InRelease                  
+Hit:6 http://security.ubuntu.com/ubuntu jammy-security InRelease    
+Get:7 https://deb.opera.com/opera-stable stable InRelease [3,172 B]
+Err:7 https://deb.opera.com/opera-stable stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 11EE8C00B693A745
+Fetched 3,172 B in 1s (3,475 B/s)
+Reading package lists... Done
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: https://deb.opera.com/opera-stable stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 11EE8C00B693A745
+W: Failed to fetch https://deb.opera.com/opera-stable/dists/stable/InRelease  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 11EE8C00B693A745
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+software-properties-common is already the newest version (0.99.22.9).
+software-properties-common set to manually installed.
+The following packages were automatically installed and are no longer required:
+  libflashrom1 libftdi1-2 libllvm13
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 9 not to upgrade.
+==> Installing SWI-Prolog from official stable PPA
+PPA publishes dbgsym, you may need to include 'main/debug' component
+Repository: 'deb https://ppa.launchpadcontent.net/swi-prolog/stable/ubuntu/ jammy main'
+Description:
+Comprehensive Prolog implementation with extensive libraries and development tools.   Primarily targetted at teaching, RDF processing and web-related tasks, such as creating web services or analysing web content.
+
+Official PPAs for SWI-Prolog. See https://www.swi-prolog.org for further information.
+More info: https://launchpad.net/~swi-prolog/+archive/ubuntu/stable
+Adding repository.
+Adding deb entry to /etc/apt/sources.list.d/swi-prolog-ubuntu-stable-jammy.list
+Adding disabled deb-src entry to /etc/apt/sources.list.d/swi-prolog-ubuntu-stable-jammy.list
+Adding key to /etc/apt/trusted.gpg.d/swi-prolog-ubuntu-stable.gpg with fingerprint E8B739E3753FF4A12360BA6A4AB3A5F60EA9AEB3
+Hit:1 http://au.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://au.archive.ubuntu.com/ubuntu jammy-updates InRelease              
+Hit:3 http://au.archive.ubuntu.com/ubuntu jammy-backports InRelease            
+Hit:4 http://dl.google.com/linux/earth/deb stable InRelease                    
+Hit:5 https://dl.google.com/linux/chrome/deb stable InRelease                  
+Get:6 https://deb.opera.com/opera-stable stable InRelease [3,172 B]            
+Err:6 https://deb.opera.com/opera-stable stable InRelease                      
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 11EE8C00B693A745
+Hit:7 http://security.ubuntu.com/ubuntu jammy-security InRelease               
+Get:8 https://ppa.launchpadcontent.net/swi-prolog/stable/ubuntu jammy InRelease [24.6 kB]
+Get:9 https://ppa.launchpadcontent.net/swi-prolog/stable/ubuntu jammy/main amd64 Packages [1,580 B]
+Get:10 https://ppa.launchpadcontent.net/swi-prolog/stable/ubuntu jammy/main Translation-en [1,136 B]
+Fetched 30.5 kB in 2s (12.4 kB/s)          
+Reading package lists... Done
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: https://deb.opera.com/opera-stable stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 11EE8C00B693A745
+W: Failed to fetch https://deb.opera.com/opera-stable/dists/stable/InRelease  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 11EE8C00B693A745
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+Hit:1 http://au.archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://au.archive.ubuntu.com/ubuntu jammy-updates InRelease              
+Hit:3 http://au.archive.ubuntu.com/ubuntu jammy-backports InRelease            
+Hit:4 http://dl.google.com/linux/earth/deb stable InRelease                    
+Hit:5 https://dl.google.com/linux/chrome/deb stable InRelease                  
+Get:6 https://deb.opera.com/opera-stable stable InRelease [3,172 B]            
+Hit:7 http://security.ubuntu.com/ubuntu jammy-security InRelease               
+Err:6 https://deb.opera.com/opera-stable stable InRelease                      
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 11EE8C00B693A745
+Hit:8 https://ppa.launchpadcontent.net/swi-prolog/stable/ubuntu jammy InRelease
+Fetched 3,172 B in 1s (2,234 B/s)
+Reading package lists... Done
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: https://deb.opera.com/opera-stable stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 11EE8C00B693A745
+W: Failed to fetch https://deb.opera.com/opera-stable/dists/stable/InRelease  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 11EE8C00B693A745
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libflashrom1 libftdi1-2 libllvm13
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libedit-dev libossp-uuid16 swi-prolog-nox
+Suggested packages:
+  uuid prolog-el
+The following NEW packages will be installed:
+  libedit-dev libossp-uuid16 swi-prolog swi-prolog-nox
+0 to upgrade, 4 to newly install, 0 to remove and 9 not to upgrade.
+Need to get 5,962 kB of archives.
+After this operation, 28.7 MB of additional disk space will be used.
+Get:1 http://au.archive.ubuntu.com/ubuntu jammy/main amd64 libedit-dev amd64 3.1-20210910-1build1 [118 kB]
+Get:2 http://au.archive.ubuntu.com/ubuntu jammy/universe amd64 libossp-uuid16 amd64 1.6.2-1.5build9 [31.4 kB]
+Get:3 https://ppa.launchpadcontent.net/swi-prolog/stable/ubuntu jammy/main amd64 swi-prolog-nox amd64 10.0.2-0-jammyppa2 [5,785 kB]
+Get:4 https://ppa.launchpadcontent.net/swi-prolog/stable/ubuntu jammy/main amd64 swi-prolog amd64 10.0.2-0-jammyppa2 [27.3 kB]
+Fetched 5,962 kB in 18s (333 kB/s)                                             
+Selecting previously unselected package libedit-dev:amd64.
+(Reading database ... 416111 files and directories currently installed.)
+Preparing to unpack .../libedit-dev_3.1-20210910-1build1_amd64.deb ...
+Unpacking libedit-dev:amd64 (3.1-20210910-1build1) ...
+Selecting previously unselected package libossp-uuid16:amd64.
+Preparing to unpack .../libossp-uuid16_1.6.2-1.5build9_amd64.deb ...
+Unpacking libossp-uuid16:amd64 (1.6.2-1.5build9) ...
+Selecting previously unselected package swi-prolog-nox.
+Preparing to unpack .../swi-prolog-nox_10.0.2-0-jammyppa2_amd64.deb ...
+Unpacking swi-prolog-nox (10.0.2-0-jammyppa2) ...
+Selecting previously unselected package swi-prolog.
+Preparing to unpack .../swi-prolog_10.0.2-0-jammyppa2_amd64.deb ...
+Unpacking swi-prolog (10.0.2-0-jammyppa2) ...
+Setting up libossp-uuid16:amd64 (1.6.2-1.5build9) ...
+Setting up libedit-dev:amd64 (3.1-20210910-1build1) ...
+Setting up swi-prolog-nox (10.0.2-0-jammyppa2) ...
+update-alternatives: using /usr/bin/swipl to provide /usr/bin/prolog (prolog) in auto mode
+Setting up swi-prolog (10.0.2-0-jammyppa2) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.13) ...
+==> Creating demo project
+==> Verifying installation
+SWI-Prolog version 10.0.2 for x86_64-linux
+==> Running demo
+Running Prolog demo...
+Hello from SWI-Prolog demo!
+factorial(5) = 120
+Demo finished successfully.
+Warning: [Thread main] /home/ian/prolog_demo/demo.pl:1: main
+Warning: [Thread main]   Initialization goal called halt(0).
+Warning: [Thread main]   The program entry point should be called using initialization/2.
+Warning: [Thread main]   Consider using library(main).
+
+Project created in: /home/ian/prolog_demo
+To run again later:
+  cd /home/ian/prolog_demo
+  ./run_demo.sh
+ian@ian-PORTEGE-Z930:~$ 
